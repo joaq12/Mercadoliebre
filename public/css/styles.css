@@ -1,3 +1,281 @@
-.banner img {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+  font-size: 12px;
+  background-color: #ebebeb;
+}
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+div.top-header {
+  display: flex;
+  align-items: center;
+
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: #eac926;
+}
+
+header div.logo {
+  width: 50%;
+  padding: 10px;
+}
+header nav {
+  display: none;
+  
+  font-size: 12px;
+}
+
+header ul li {
+  padding: 5px;
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header .form {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+header .form .input {
+  border: none;
+  outline: none;
+  color: #666;
+  width: 70%;
+}
+header .form .submit {
+  border: none;
+  background-color: #fff;
+  color: #666;
+}
+
+header div.top-header p {
   width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.burger-menu {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+.price {
+  font-size: 18px;
+  flex: 40%;
+}
+.discount {
+  flex: 60%;
+}
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+
+article:hover {
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.description {
+  visibility: hidden;
+  margin-top: 20px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.discount {
+  color: #39b54a;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 1s;
+}
+
+ main article:hover .main-article i{
+  transform: rotateZ(-90deg);
+  }
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+article div.main-article {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  position: relative;
+}
+
+ .site{
+  display: flex;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .iconos {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #0044aa;
+}
+
+.footer-list div {
+  padding: 5px;
+}
+
+.loguearse{
+  padding: 0 50px;
+}
+.loguearse:hover {
+  background-color: #0022AA;
+}
+.copyright{
+  font-size: 15px;
+  padding-top: 50px;
+}
+form h3{
+  padding: 12px 0;
+}
+.form-login{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 100px 0;
+}
+
+.form-register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.intereses{
+  font-size: 15px;
+}
+.form-register p{
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.password{
+  padding-top: 12px;
+}
+.buttons{
+  display: flex;
+  padding-top: 20px;
+}
+
+.button{
+  display: flex;
+  color: #ebebeb;
+  background-color: #0044aa;
+}
+@media (min-width: 361px) {
+  header nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  main section article:hover .description {
+    visibility: visible;
+  }
+  div.burger-menu{
+    display: none;
+  }
+
+  main section article {
+    
+    width: 45%;
+  }
+  .footer-list{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 769px) {
+  main section article {
+    width: 22%;
+  }
+  header div.logo,
+  header .form,
+  header div.top-header p{
+    width: 30%;
+  }
+  header div.top-header p{
+    margin-top: 0;
+  }
+  .iconos i:hover{
+   color: #39b54a;
+  }
 }
